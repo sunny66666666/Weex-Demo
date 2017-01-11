@@ -48,7 +48,7 @@
 	var __weex_style__ = __webpack_require__(2)
 	var __weex_script__ = __webpack_require__(3)
 
-	__weex_define__('@weex-component/58d81893c0fdc911bd3a828b7e978773', [], function(__weex_require__, __weex_exports__, __weex_module__) {
+	__weex_define__('@weex-component/c4d4b2b3c2620d1a16351e3c093cce21', [], function(__weex_require__, __weex_exports__, __weex_module__) {
 
 	    __weex_script__(__weex_module__, __weex_exports__, __weex_require__)
 	    if (__weex_exports__.__esModule && __weex_exports__.default) {
@@ -61,55 +61,350 @@
 
 	})
 
-	__weex_bootstrap__('@weex-component/58d81893c0fdc911bd3a828b7e978773',undefined,undefined)
+	__weex_bootstrap__('@weex-component/c4d4b2b3c2620d1a16351e3c093cce21',undefined,undefined)
 
 /***/ },
 /* 1 */
 /***/ function(module, exports) {
 
 	module.exports = {
-	  "type": "div",
+	  "type": "scroller",
 	  "classList": [
-	    "page-container"
+	    "bg_color"
 	  ],
 	  "children": [
 	    {
-	      "type": "nav",
-	      "attr": {
-	        "navtitle": "首页",
-	        "color": "#fff"
-	      }
+	      "type": "nav"
 	    },
 	    {
 	      "type": "div",
 	      "classList": [
-	        "list-wrapper"
+	        "user_model_row"
 	      ],
 	      "children": [
 	        {
-	          "type": "text",
+	          "type": "image",
 	          "attr": {
-	            "value": "hello 要实现网络请求的测试"
-	          }
+	            "src": "http://i.niupic.com/images/2017/01/03/42Igv9.png"
+	          },
+	          "classList": [
+	            "model_img"
+	          ]
 	        },
 	        {
-	          "type": "list",
+	          "type": "div",
 	          "classList": [
-	            "list"
+	            "model_text"
 	          ],
 	          "children": [
 	            {
-	              "type": "cell",
-	              "append": "tree",
-	              "repeat": {
-	                "expression": function () {return this.items},
-	                "value": "item"
-	              },
+	              "type": "text",
+	              "attr": {
+	                "value": "NOT零因子"
+	              }
+	            },
+	            {
+	              "type": "text",
+	              "classList": [
+	                "model_edit"
+	              ],
+	              "attr": {
+	                "value": "查看或编辑个人资料"
+	              }
+	            }
+	          ]
+	        },
+	        {
+	          "type": "image",
+	          "attr": {
+	            "src": "http://i.niupic.com/images/2017/01/03/QxqgKj.png"
+	          },
+	          "classList": [
+	            "model_dian"
+	          ]
+	        }
+	      ]
+	    },
+	    {
+	      "type": "div",
+	      "classList": [
+	        "do_model_row"
+	      ],
+	      "children": [
+	        {
+	          "type": "div",
+	          "classList": [
+	            "model_one"
+	          ],
+	          "children": [
+	            {
+	              "type": "text",
+	              "attr": {
+	                "value": "5"
+	              }
+	            },
+	            {
+	              "type": "text",
+	              "classList": [
+	                "model_one_text"
+	              ],
+	              "attr": {
+	                "value": "赞"
+	              }
+	            }
+	          ]
+	        },
+	        {
+	          "type": "div",
+	          "classList": [
+	            "model_one"
+	          ],
+	          "children": [
+	            {
+	              "type": "text",
+	              "attr": {
+	                "value": "0%"
+	              }
+	            },
+	            {
+	              "type": "text",
+	              "classList": [
+	                "model_one_text"
+	              ],
+	              "attr": {
+	                "value": "采纳率"
+	              }
+	            }
+	          ]
+	        },
+	        {
+	          "type": "div",
+	          "classList": [
+	            "model_one"
+	          ],
+	          "children": [
+	            {
+	              "type": "text",
+	              "attr": {
+	                "value": "33"
+	              }
+	            },
+	            {
+	              "type": "text",
+	              "classList": [
+	                "model_one_text"
+	              ],
+	              "attr": {
+	                "value": "财富值"
+	              }
+	            }
+	          ]
+	        }
+	      ]
+	    },
+	    {
+	      "type": "div",
+	      "children": [
+	        {
+	          "type": "div",
+	          "classList": [
+	            "list_model"
+	          ],
+	          "children": [
+	            {
+	              "type": "div",
+	              "classList": [
+	                "list_model_row"
+	              ],
 	              "children": [
 	                {
-	                  "type": "text",
+	                  "type": "image",
 	                  "attr": {
-	                    "value": function () {return this.item.responseData}
+	                    "src": "http://i.niupic.com/images/2017/01/03/BCcCa2.png"
+	                  },
+	                  "classList": [
+	                    "list_img"
+	                  ]
+	                },
+	                {
+	                  "type": "text",
+	                  "classList": [
+	                    "list_text"
+	                  ],
+	                  "attr": {
+	                    "value": "我的提问"
+	                  }
+	                }
+	              ]
+	            },
+	            {
+	              "type": "div",
+	              "classList": [
+	                "list_model_row"
+	              ],
+	              "children": [
+	                {
+	                  "type": "image",
+	                  "attr": {
+	                    "src": "http://i.niupic.com/images/2017/01/04/jwjEIW.png"
+	                  },
+	                  "classList": [
+	                    "list_img"
+	                  ]
+	                },
+	                {
+	                  "type": "text",
+	                  "classList": [
+	                    "list_text"
+	                  ],
+	                  "attr": {
+	                    "value": "我的回答"
+	                  }
+	                }
+	              ]
+	            }
+	          ]
+	        },
+	        {
+	          "type": "div",
+	          "classList": [
+	            "list_model"
+	          ],
+	          "children": [
+	            {
+	              "type": "div",
+	              "classList": [
+	                "list_model_row"
+	              ],
+	              "children": [
+	                {
+	                  "type": "image",
+	                  "attr": {
+	                    "src": "http://i.niupic.com/images/2017/01/04/eIkOhU.png"
+	                  },
+	                  "classList": [
+	                    "list_img"
+	                  ]
+	                },
+	                {
+	                  "type": "text",
+	                  "classList": [
+	                    "list_text"
+	                  ],
+	                  "attr": {
+	                    "value": "我的关注"
+	                  }
+	                }
+	              ]
+	            },
+	            {
+	              "type": "div",
+	              "classList": [
+	                "list_model_row"
+	              ],
+	              "children": [
+	                {
+	                  "type": "image",
+	                  "attr": {
+	                    "src": "http://i.niupic.com/images/2017/01/04/x1jtfS.png"
+	                  },
+	                  "classList": [
+	                    "list_img"
+	                  ]
+	                },
+	                {
+	                  "type": "text",
+	                  "classList": [
+	                    "list_text"
+	                  ],
+	                  "attr": {
+	                    "value": "我的收藏"
+	                  }
+	                }
+	              ]
+	            }
+	          ]
+	        },
+	        {
+	          "type": "div",
+	          "classList": [
+	            "list_model"
+	          ],
+	          "children": [
+	            {
+	              "type": "div",
+	              "classList": [
+	                "list_model_row"
+	              ],
+	              "children": [
+	                {
+	                  "type": "image",
+	                  "attr": {
+	                    "src": "http://i.niupic.com/images/2017/01/04/QvwEx1.png"
+	                  },
+	                  "classList": [
+	                    "list_img"
+	                  ]
+	                },
+	                {
+	                  "type": "text",
+	                  "classList": [
+	                    "list_text"
+	                  ],
+	                  "attr": {
+	                    "value": "我的提草稿"
+	                  }
+	                }
+	              ]
+	            },
+	            {
+	              "type": "div",
+	              "classList": [
+	                "list_model_row"
+	              ],
+	              "children": [
+	                {
+	                  "type": "image",
+	                  "attr": {
+	                    "src": "http://i.niupic.com/images/2017/01/04/sxk22K.png"
+	                  },
+	                  "classList": [
+	                    "list_img"
+	                  ]
+	                },
+	                {
+	                  "type": "text",
+	                  "classList": [
+	                    "list_text"
+	                  ],
+	                  "attr": {
+	                    "value": "我的浏览记录"
+	                  }
+	                }
+	              ]
+	            },
+	            {
+	              "type": "div",
+	              "classList": [
+	                "list_model_row"
+	              ],
+	              "children": [
+	                {
+	                  "type": "image",
+	                  "attr": {
+	                    "src": "http://i.niupic.com/images/2017/01/04/QNROYR.png"
+	                  },
+	                  "classList": [
+	                    "list_img"
+	                  ]
+	                },
+	                {
+	                  "type": "text",
+	                  "classList": [
+	                    "list_text"
+	                  ],
+	                  "attr": {
+	                    "value": "我感兴趣的标签"
 	                  }
 	                }
 	              ]
@@ -126,8 +421,77 @@
 /***/ function(module, exports) {
 
 	module.exports = {
-	  "page-container": {
-	    "paddingTop": 100
+	  "bg_color": {
+	    "backgroundColor": "#f0f0f0",
+	    "height": 1378,
+	    "paddingTop": 100,
+	    "color": "#ff0000"
+	  },
+	  "user_model_row": {
+	    "display": "flex",
+	    "flexDirection": "row",
+	    "height": 180,
+	    "alignItems": "flex-start",
+	    "marginTop": 20,
+	    "backgroundColor": "#ffffff"
+	  },
+	  "model_img": {
+	    "height": 160,
+	    "width": 160,
+	    "padding": 20
+	  },
+	  "model_text": {
+	    "flex": 1,
+	    "margin": 25
+	  },
+	  "model_edit": {
+	    "color": "#A7A8A8",
+	    "fontSize": 30,
+	    "marginTop": 20
+	  },
+	  "model_dian": {
+	    "height": 60,
+	    "width": 60,
+	    "padding": 20,
+	    "marginTop": 70,
+	    "marginRight": 20,
+	    "resize": "contain"
+	  },
+	  "do_model_row": {
+	    "display": "flex",
+	    "flexDirection": "row",
+	    "height": 130,
+	    "alignItems": "center",
+	    "marginTop": 2,
+	    "backgroundColor": "#ffffff",
+	    "justifyContent": "center"
+	  },
+	  "model_one": {
+	    "flex": 1,
+	    "flexDirection": "column",
+	    "alignItems": "center"
+	  },
+	  "model_one_text": {
+	    "color": "#A7A8A8",
+	    "fontSize": 28
+	  },
+	  "list_model_row": {
+	    "display": "flex",
+	    "flexDirection": "row",
+	    "height": 100,
+	    "backgroundColor": "#ffffff",
+	    "padding": 40,
+	    "alignItems": "center",
+	    "marginTop": 1
+	  },
+	  "list_model": {
+	    "marginTop": 20
+	  },
+	  "list_img": {
+	    "height": 38,
+	    "width": 38,
+	    "marginRight": 40,
+	    "resize": "contain"
 	  }
 	}
 
@@ -135,35 +499,9 @@
 /* 3 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = function(module, exports, __weex_require__){"use strict";
+	module.exports = function(module, exports, __weex_require__){'use strict';
 
-	__webpack_require__(4);
-	var stream = __weex_require__('@weex-module/stream');
-	module.exports = {
-		data: function () {return {
-			items: []
-		}},
-		created: function created() {
-			var _url = "http://192.168.25.19:8020/suifang/php/diabetes.php";
-			this.rend(_url);
-		},
-		methods: {
-			rend: function rend(_url) {
-				var _self = this;
-				stream.fetch({
-					method: "get",
-					url: _url,
-					type: "json"
-				}, function (res) {
-					try {
-						var results = res.data;
-
-						_self.items.push(results);
-					} catch (e) {}
-				}, function (res) {});
-			}
-		}
-	};}
+	__webpack_require__(4);}
 	/* generated by weex-loader */
 
 
@@ -197,11 +535,11 @@
 	    "height": function () {return this.navBarHeight},
 	    "backgroundColor": "#ffffff",
 	    "title": function () {return this.title},
-	    "titleColor": "#797979",
-	    "leftItemTitle": function () {return this.leftitemtitle},
+	    "titleColor": "black",
+	    "leftItemTitle": "More",
 	    "leftItemColor": "white",
-	    "leftItemSrc": function () {return this.leftimg},
-	    "rightItemSrc": function () {return this.rightimg}
+	    "leftItemSrc": "http://i.niupic.com/images/2017/01/03/TRRdfA.png",
+	    "rightItemSrc": "http://i.niupic.com/images/2017/01/03/ox15A2.png"
 	  }
 	}
 
@@ -211,18 +549,13 @@
 
 	module.exports = function(module, exports, __weex_require__){'use strict';
 
-	var env = 'nav';
 	__webpack_require__(7);
 	module.exports = {
 	  data: function () {return {
 	    navBarHeight: 100,
-	    title: null,
+	    title: '我',
 	    dir: 'examples',
-	    baseURL: '',
-	    leftitemtitle: null,
-	    leftimg: null,
-	    rightimg: null
-
+	    baseURL: ''
 	  }},
 	  created: function created() {
 	    this.$getConfig(function (config) {

@@ -48,7 +48,7 @@
 	var __weex_style__ = __webpack_require__(2)
 	var __weex_script__ = __webpack_require__(3)
 
-	__weex_define__('@weex-component/58d81893c0fdc911bd3a828b7e978773', [], function(__weex_require__, __weex_exports__, __weex_module__) {
+	__weex_define__('@weex-component/eb5e8b85ff362565ff9c523982a6033d', [], function(__weex_require__, __weex_exports__, __weex_module__) {
 
 	    __weex_script__(__weex_module__, __weex_exports__, __weex_require__)
 	    if (__weex_exports__.__esModule && __weex_exports__.default) {
@@ -61,56 +61,458 @@
 
 	})
 
-	__weex_bootstrap__('@weex-component/58d81893c0fdc911bd3a828b7e978773',undefined,undefined)
+	__weex_bootstrap__('@weex-component/eb5e8b85ff362565ff9c523982a6033d',undefined,undefined)
 
 /***/ },
 /* 1 */
 /***/ function(module, exports) {
 
 	module.exports = {
-	  "type": "div",
+	  "type": "scroller",
 	  "classList": [
-	    "page-container"
+	    "bg_color"
 	  ],
 	  "children": [
 	    {
 	      "type": "nav",
 	      "attr": {
-	        "navtitle": "首页",
-	        "color": "#fff"
+	        "title": "团队",
+	        "leftimg": "",
+	        "rightimg": "",
+	        "leftitemtitle": "zuo"
 	      }
 	    },
 	    {
 	      "type": "div",
 	      "classList": [
-	        "list-wrapper"
+	        "user_model_row"
 	      ],
 	      "children": [
 	        {
-	          "type": "text",
-	          "attr": {
-	            "value": "hello 要实现网络请求的测试"
-	          }
+	          "type": "div",
+	          "children": [
+	            {
+	              "type": "text",
+	              "classList": [
+	                "introduce_text"
+	              ],
+	              "attr": {
+	                "value": "推荐团队"
+	              }
+	            }
+	          ]
 	        },
 	        {
-	          "type": "list",
+	          "type": "div",
 	          "classList": [
-	            "list"
+	            "type_list"
 	          ],
 	          "children": [
 	            {
-	              "type": "cell",
-	              "append": "tree",
-	              "repeat": {
-	                "expression": function () {return this.items},
-	                "value": "item"
-	              },
+	              "type": "div",
+	              "classList": [
+	                "type_list_row"
+	              ],
 	              "children": [
 	                {
-	                  "type": "text",
+	                  "type": "image",
 	                  "attr": {
-	                    "value": function () {return this.item.responseData}
-	                  }
+	                    "src": "http://i.niupic.com/images/2017/01/03/42Igv9.png"
+	                  },
+	                  "classList": [
+	                    "model_img"
+	                  ]
+	                },
+	                {
+	                  "type": "div",
+	                  "classList": [
+	                    "model_text"
+	                  ],
+	                  "children": [
+	                    {
+	                      "type": "text",
+	                      "classList": [
+	                        "model_title"
+	                      ],
+	                      "attr": {
+	                        "value": "生活用纸交流"
+	                      }
+	                    },
+	                    {
+	                      "type": "div",
+	                      "classList": [
+	                        "flag_model_row"
+	                      ],
+	                      "children": [
+	                        {
+	                          "type": "text",
+	                          "classList": [
+	                            "row_type",
+	                            "text_style"
+	                          ],
+	                          "attr": {
+	                            "value": "社会民生"
+	                          }
+	                        },
+	                        {
+	                          "type": "text",
+	                          "classList": [
+	                            "row_num",
+	                            "text_style"
+	                          ],
+	                          "attr": {
+	                            "value": "1人"
+	                          }
+	                        },
+	                        {
+	                          "type": "text",
+	                          "classList": [
+	                            "row_team",
+	                            "text_style"
+	                          ],
+	                          "attr": {
+	                            "value": "小团"
+	                          }
+	                        }
+	                      ]
+	                    },
+	                    {
+	                      "type": "text",
+	                      "classList": [
+	                        "model_note"
+	                      ],
+	                      "attr": {
+	                        "value": "精益求精，信守承诺"
+	                      }
+	                    }
+	                  ]
+	                }
+	              ]
+	            },
+	            {
+	              "type": "div",
+	              "classList": [
+	                "type_list_row"
+	              ],
+	              "children": [
+	                {
+	                  "type": "image",
+	                  "attr": {
+	                    "src": "http://i.niupic.com/images/2017/01/10/lmb1qY.png"
+	                  },
+	                  "classList": [
+	                    "model_img"
+	                  ]
+	                },
+	                {
+	                  "type": "div",
+	                  "classList": [
+	                    "model_text"
+	                  ],
+	                  "children": [
+	                    {
+	                      "type": "text",
+	                      "classList": [
+	                        "model_title"
+	                      ],
+	                      "attr": {
+	                        "value": "足球之巅"
+	                      }
+	                    },
+	                    {
+	                      "type": "div",
+	                      "classList": [
+	                        "flag_model_row"
+	                      ],
+	                      "children": [
+	                        {
+	                          "type": "text",
+	                          "classList": [
+	                            "row_type",
+	                            "text_style",
+	                            "pink_text"
+	                          ],
+	                          "attr": {
+	                            "value": "社会民生"
+	                          }
+	                        },
+	                        {
+	                          "type": "text",
+	                          "classList": [
+	                            "row_num",
+	                            "text_style"
+	                          ],
+	                          "attr": {
+	                            "value": "1人"
+	                          }
+	                        },
+	                        {
+	                          "type": "text",
+	                          "classList": [
+	                            "row_team",
+	                            "text_style"
+	                          ],
+	                          "attr": {
+	                            "value": "小团"
+	                          }
+	                        }
+	                      ]
+	                    },
+	                    {
+	                      "type": "text",
+	                      "classList": [
+	                        "model_note"
+	                      ],
+	                      "attr": {
+	                        "value": "爱足球，爱生活"
+	                      }
+	                    }
+	                  ]
+	                }
+	              ]
+	            },
+	            {
+	              "type": "div",
+	              "classList": [
+	                "type_list_row"
+	              ],
+	              "children": [
+	                {
+	                  "type": "image",
+	                  "attr": {
+	                    "src": "http://i.niupic.com/images/2017/01/10/RevoWS.png"
+	                  },
+	                  "classList": [
+	                    "model_img"
+	                  ]
+	                },
+	                {
+	                  "type": "div",
+	                  "classList": [
+	                    "model_text"
+	                  ],
+	                  "children": [
+	                    {
+	                      "type": "text",
+	                      "classList": [
+	                        "model_title"
+	                      ],
+	                      "attr": {
+	                        "value": "废物发布区"
+	                      }
+	                    },
+	                    {
+	                      "type": "div",
+	                      "classList": [
+	                        "flag_model_row"
+	                      ],
+	                      "children": [
+	                        {
+	                          "type": "text",
+	                          "classList": [
+	                            "row_type",
+	                            "text_style",
+	                            "yello_text"
+	                          ],
+	                          "attr": {
+	                            "value": "社会民生"
+	                          }
+	                        },
+	                        {
+	                          "type": "text",
+	                          "classList": [
+	                            "row_num",
+	                            "text_style"
+	                          ],
+	                          "attr": {
+	                            "value": "1人"
+	                          }
+	                        },
+	                        {
+	                          "type": "text",
+	                          "classList": [
+	                            "row_team",
+	                            "text_style"
+	                          ],
+	                          "attr": {
+	                            "value": "小团"
+	                          }
+	                        }
+	                      ]
+	                    },
+	                    {
+	                      "type": "text",
+	                      "classList": [
+	                        "model_note"
+	                      ],
+	                      "attr": {
+	                        "value": "用空余时间帮助更多人"
+	                      }
+	                    }
+	                  ]
+	                }
+	              ]
+	            },
+	            {
+	              "type": "div",
+	              "classList": [
+	                "type_list_row"
+	              ],
+	              "children": [
+	                {
+	                  "type": "image",
+	                  "attr": {
+	                    "src": "http://i.niupic.com/images/2017/01/03/42Igv9.png"
+	                  },
+	                  "classList": [
+	                    "model_img"
+	                  ]
+	                },
+	                {
+	                  "type": "div",
+	                  "classList": [
+	                    "model_text"
+	                  ],
+	                  "children": [
+	                    {
+	                      "type": "text",
+	                      "classList": [
+	                        "model_title"
+	                      ],
+	                      "attr": {
+	                        "value": "小黄人"
+	                      }
+	                    },
+	                    {
+	                      "type": "div",
+	                      "classList": [
+	                        "flag_model_row"
+	                      ],
+	                      "children": [
+	                        {
+	                          "type": "text",
+	                          "classList": [
+	                            "row_type",
+	                            "text_style",
+	                            "green_text"
+	                          ],
+	                          "attr": {
+	                            "value": "社会民生"
+	                          }
+	                        },
+	                        {
+	                          "type": "text",
+	                          "classList": [
+	                            "row_num",
+	                            "text_style"
+	                          ],
+	                          "attr": {
+	                            "value": "1人"
+	                          }
+	                        },
+	                        {
+	                          "type": "text",
+	                          "classList": [
+	                            "row_team",
+	                            "text_style"
+	                          ],
+	                          "attr": {
+	                            "value": "小团"
+	                          }
+	                        }
+	                      ]
+	                    },
+	                    {
+	                      "type": "text",
+	                      "classList": [
+	                        "model_note"
+	                      ],
+	                      "attr": {
+	                        "value": "保持精神"
+	                      }
+	                    }
+	                  ]
+	                }
+	              ]
+	            },
+	            {
+	              "type": "div",
+	              "classList": [
+	                "type_list_row"
+	              ],
+	              "children": [
+	                {
+	                  "type": "image",
+	                  "attr": {
+	                    "src": "http://i.niupic.com/images/2017/01/10/xZhRcp.png"
+	                  },
+	                  "classList": [
+	                    "model_img"
+	                  ]
+	                },
+	                {
+	                  "type": "div",
+	                  "classList": [
+	                    "model_text"
+	                  ],
+	                  "children": [
+	                    {
+	                      "type": "text",
+	                      "classList": [
+	                        "model_title"
+	                      ],
+	                      "attr": {
+	                        "value": "软件技术交流"
+	                      }
+	                    },
+	                    {
+	                      "type": "div",
+	                      "classList": [
+	                        "flag_model_row"
+	                      ],
+	                      "children": [
+	                        {
+	                          "type": "text",
+	                          "classList": [
+	                            "row_type",
+	                            "text_style"
+	                          ],
+	                          "attr": {
+	                            "value": "社会民生"
+	                          }
+	                        },
+	                        {
+	                          "type": "text",
+	                          "classList": [
+	                            "row_num",
+	                            "text_style"
+	                          ],
+	                          "attr": {
+	                            "value": "1人"
+	                          }
+	                        },
+	                        {
+	                          "type": "text",
+	                          "classList": [
+	                            "row_team",
+	                            "text_style"
+	                          ],
+	                          "attr": {
+	                            "value": "小团"
+	                          }
+	                        }
+	                      ]
+	                    },
+	                    {
+	                      "type": "text",
+	                      "classList": [
+	                        "model_note"
+	                      ],
+	                      "attr": {
+	                        "value": "软件技术交流"
+	                      }
+	                    }
+	                  ]
 	                }
 	              ]
 	            }
@@ -126,8 +528,89 @@
 /***/ function(module, exports) {
 
 	module.exports = {
-	  "page-container": {
-	    "paddingTop": 100
+	  "bg_color": {
+	    "backgroundColor": "#f0f0f0",
+	    "height": 1378,
+	    "paddingTop": 100,
+	    "color": "#ff0000"
+	  },
+	  "introduce_text": {
+	    "lineHeight": 30,
+	    "color": "#8A8A8A",
+	    "fontSize": 30,
+	    "padding": 30
+	  },
+	  "user_model_row": {
+	    "backgroundColor": "#ffffff",
+	    "marginTop": 22
+	  },
+	  "type_list_row": {
+	    "display": "flex",
+	    "flexDirection": "row",
+	    "height": 200,
+	    "alignItems": "flex-start",
+	    "marginTop": 20,
+	    "backgroundColor": "#ffffff",
+	    "borderBottomColor": "#7e7e7e",
+	    "borderBottomWidth": 1
+	  },
+	  "flag_model_row": {
+	    "display": "flex",
+	    "flexDirection": "row"
+	  },
+	  "model_title": {
+	    "fontSize": 40,
+	    "color": "#000000",
+	    "padding": 10
+	  },
+	  "row_type": {
+	    "width": 150,
+	    "backgroundColor": "#DAB598",
+	    "marginLeft": 10
+	  },
+	  "row_num": {
+	    "width": 100,
+	    "backgroundColor": "#84B4DC",
+	    "marginLeft": 20
+	  },
+	  "row_team": {
+	    "width": 100,
+	    "backgroundColor": "#84B4DC",
+	    "marginLeft": 20
+	  },
+	  "text_style": {
+	    "color": "#ffffff",
+	    "borderRadius": 5,
+	    "textAlign": "center",
+	    "fontSize": 28
+	  },
+	  "model_img": {
+	    "height": 160,
+	    "width": 160,
+	    "padding": 10,
+	    "borderRadius": 150,
+	    "margin": 20
+	  },
+	  "model_text": {
+	    "flex": 1,
+	    "marginLeft": 30,
+	    "marginTop": 20
+	  },
+	  "model_note": {
+	    "flex": 1,
+	    "marginLeft": 10,
+	    "marginTop": 20,
+	    "color": "#7E7E7E",
+	    "fontSize": 30
+	  },
+	  "pink_text": {
+	    "backgroundColor": "#FFA5BF"
+	  },
+	  "yello_text": {
+	    "backgroundColor": "#FFAC67"
+	  },
+	  "green_text": {
+	    "backgroundColor": "#87D9C2"
 	  }
 	}
 
@@ -135,35 +618,10 @@
 /* 3 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = function(module, exports, __weex_require__){"use strict";
+	module.exports = function(module, exports, __weex_require__){'use strict';
 
-	__webpack_require__(4);
-	var stream = __weex_require__('@weex-module/stream');
-	module.exports = {
-		data: function () {return {
-			items: []
-		}},
-		created: function created() {
-			var _url = "http://192.168.25.19:8020/suifang/php/diabetes.php";
-			this.rend(_url);
-		},
-		methods: {
-			rend: function rend(_url) {
-				var _self = this;
-				stream.fetch({
-					method: "get",
-					url: _url,
-					type: "json"
-				}, function (res) {
-					try {
-						var results = res.data;
-
-						_self.items.push(results);
-					} catch (e) {}
-				}, function (res) {});
-			}
-		}
-	};}
+	var env = 'user';
+	__webpack_require__(4);}
 	/* generated by weex-loader */
 
 

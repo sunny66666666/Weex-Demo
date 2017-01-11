@@ -1,0 +1,52 @@
+<template>
+	<div class="page-container"> 
+		<nav navtitle="首页" color="#fff" ></nav>
+		<div class="list-wrapper">
+			<text>hello</text>
+			<list class="list">
+				<cell repeat="item in items">
+					<text>{{item.responseData}}</text> 
+				</cell>
+			</list>
+		</div> 
+	</div>
+</template>
+<script> 
+	require("./model/nav.we") 
+	var stream = require('@weex-module/stream') 
+	module.exports={
+		data: {
+			items: []
+		},
+		created: function(){
+			var _url = "http://192.168.25.19:8020/suifang/php/diabetes.php";
+			this.rend(_url);
+		},
+		methods: {
+			rend: function(_url){
+				var _self = this;
+				stream.fetch({
+					method: "get",
+					url: _url,
+					type: "json"
+				},function(res){
+					try{
+						var results = res.data;
+						
+						_self.items.push(results);
+					}catch(e){
+
+					}
+				},function(res){
+
+      			})
+
+			}
+		}
+	}
+</script>
+<style>
+	.page-container{
+		padding-top: 100;
+	}
+</style>

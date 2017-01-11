@@ -48,7 +48,7 @@
 	var __weex_style__ = __webpack_require__(2)
 	var __weex_script__ = __webpack_require__(3)
 
-	__weex_define__('@weex-component/58d81893c0fdc911bd3a828b7e978773', [], function(__weex_require__, __weex_exports__, __weex_module__) {
+	__weex_define__('@weex-component/f5c15641d21c74d4bc73b42858b12c19', [], function(__weex_require__, __weex_exports__, __weex_module__) {
 
 	    __weex_script__(__weex_module__, __weex_exports__, __weex_require__)
 	    if (__weex_exports__.__esModule && __weex_exports__.default) {
@@ -61,56 +61,316 @@
 
 	})
 
-	__weex_bootstrap__('@weex-component/58d81893c0fdc911bd3a828b7e978773',undefined,undefined)
+	__weex_bootstrap__('@weex-component/f5c15641d21c74d4bc73b42858b12c19',undefined,undefined)
 
 /***/ },
 /* 1 */
 /***/ function(module, exports) {
 
 	module.exports = {
-	  "type": "div",
+	  "type": "scroller",
 	  "classList": [
-	    "page-container"
+	    "bg_color"
 	  ],
 	  "children": [
 	    {
 	      "type": "nav",
 	      "attr": {
-	        "navtitle": "首页",
-	        "color": "#fff"
+	        "title": "主页",
+	        "leftimg": "http://i.niupic.com/images/2017/01/11/OlGnRf.png",
+	        "rightimg": "http://i.niupic.com/images/2017/01/11/xpYp9x.png",
+	        "leftitemtitle": "zuo"
 	      }
 	    },
 	    {
 	      "type": "div",
 	      "classList": [
-	        "list-wrapper"
+	        "middle_content"
 	      ],
 	      "children": [
 	        {
-	          "type": "text",
-	          "attr": {
-	            "value": "hello 要实现网络请求的测试"
-	          }
-	        },
-	        {
-	          "type": "list",
+	          "type": "div",
 	          "classList": [
-	            "list"
+	            "slide_model"
 	          ],
 	          "children": [
 	            {
-	              "type": "cell",
-	              "append": "tree",
-	              "repeat": {
-	                "expression": function () {return this.items},
-	                "value": "item"
+	              "type": "slider",
+	              "classList": [
+	                "slider"
+	              ],
+	              "attr": {
+	                "interval": "3000",
+	                "autoPlay": "true"
 	              },
 	              "children": [
 	                {
+	                  "type": "div",
+	                  "classList": [
+	                    "slider-pages"
+	                  ],
+	                  "repeat": {
+	                    "expression": function () {return this.itemList},
+	                    "value": "item"
+	                  },
+	                  "children": [
+	                    {
+	                      "type": "image",
+	                      "classList": [
+	                        "img"
+	                      ],
+	                      "attr": {
+	                        "src": function () {return this.item.pictureUrl}
+	                      }
+	                    },
+	                    {
+	                      "type": "text",
+	                      "classList": [
+	                        "title"
+	                      ],
+	                      "attr": {
+	                        "value": function () {return this.item.title}
+	                      }
+	                    }
+	                  ]
+	                }
+	              ]
+	            }
+	          ]
+	        },
+	        {
+	          "type": "div",
+	          "classList": [
+	            "first_item"
+	          ],
+	          "children": [
+	            {
+	              "type": "text",
+	              "classList": [
+	                "first_title"
+	              ],
+	              "attr": {
+	                "value": "古代的人是们，是怎样对待春运的？"
+	              }
+	            },
+	            {
+	              "type": "div",
+	              "classList": [
+	                "row_text"
+	              ],
+	              "children": [
+	                {
 	                  "type": "text",
+	                  "classList": [
+	                    "row_data"
+	                  ],
 	                  "attr": {
-	                    "value": function () {return this.item.responseData}
+	                    "value": "2017.01.10更新11篇"
 	                  }
+	                },
+	                {
+	                  "type": "text",
+	                  "classList": [
+	                    "row_type"
+	                  ],
+	                  "attr": {
+	                    "value": "日报"
+	                  }
+	                }
+	              ]
+	            }
+	          ]
+	        },
+	        {
+	          "type": "div",
+	          "classList": [
+	            "second_model"
+	          ],
+	          "children": [
+	            {
+	              "type": "div",
+	              "classList": [
+	                "new_list"
+	              ],
+	              "children": [
+	                {
+	                  "type": "text",
+	                  "classList": [
+	                    "first_title"
+	                  ],
+	                  "attr": {
+	                    "value": "百度最成功的产品有那些？"
+	                  }
+	                },
+	                {
+	                  "type": "div",
+	                  "classList": [
+	                    "row_text"
+	                  ],
+	                  "children": [
+	                    {
+	                      "type": "image",
+	                      "attr": {
+	                        "src": "http://i.niupic.com/images/2017/01/04/x1jtfS.png"
+	                      },
+	                      "classList": [
+	                        "user_img"
+	                      ]
+	                    },
+	                    {
+	                      "type": "text",
+	                      "classList": [
+	                        "user_name",
+	                        "content_style"
+	                      ],
+	                      "attr": {
+	                        "value": "它山之石"
+	                      }
+	                    }
+	                  ]
+	                },
+	                {
+	                  "type": "text",
+	                  "classList": [
+	                    "content",
+	                    "content_style"
+	                  ],
+	                  "attr": {
+	                    "value": "百度搜索；百度一下，你就知道。这个家喻户晓，不用解释了，...hao123；网站导航，上网从这里开始"
+	                  }
+	                },
+	                {
+	                  "type": "div",
+	                  "classList": [
+	                    "row_text"
+	                  ],
+	                  "children": [
+	                    {
+	                      "type": "text",
+	                      "classList": [
+	                        "focuse"
+	                      ],
+	                      "attr": {
+	                        "value": "关注"
+	                      }
+	                    },
+	                    {
+	                      "type": "text",
+	                      "classList": [
+	                        "line"
+	                      ],
+	                      "attr": {
+	                        "value": "|"
+	                      }
+	                    },
+	                    {
+	                      "type": "text",
+	                      "classList": [
+	                        "unfocuse"
+	                      ],
+	                      "attr": {
+	                        "value": "不感兴趣"
+	                      }
+	                    }
+	                  ]
+	                }
+	              ]
+	            },
+	            {
+	              "type": "div",
+	              "classList": [
+	                "new_list"
+	              ],
+	              "children": [
+	                {
+	                  "type": "text",
+	                  "classList": [
+	                    "first_title"
+	                  ],
+	                  "attr": {
+	                    "value": "央视批判豆瓣恶评引导观众剧看国产影片，对此你怎么看？"
+	                  }
+	                },
+	                {
+	                  "type": "div",
+	                  "classList": [
+	                    "row_text"
+	                  ],
+	                  "children": [
+	                    {
+	                      "type": "image",
+	                      "attr": {
+	                        "src": "http://i.niupic.com/images/2017/01/11/J1fxEr.png"
+	                      },
+	                      "classList": [
+	                        "user_img"
+	                      ]
+	                    },
+	                    {
+	                      "type": "text",
+	                      "classList": [
+	                        "user_name",
+	                        "content_style"
+	                      ],
+	                      "attr": {
+	                        "value": "杨依依"
+	                      }
+	                    }
+	                  ]
+	                },
+	                {
+	                  "type": "image",
+	                  "attr": {
+	                    "src": "http://i.niupic.com/images/2017/01/11/iLQklC.jpg"
+	                  },
+	                  "classList": [
+	                    "ad_img"
+	                  ]
+	                },
+	                {
+	                  "type": "text",
+	                  "classList": [
+	                    "content",
+	                    "content_style"
+	                  ],
+	                  "attr": {
+	                    "value": "作为国家喉舌的央媒，竟然为了给几部烂片背书，怒撕影评人以及专业电影评分平台，真乃千古奇闻。权力的爪牙，竟然伸到电影圈，这也伸的太长了吧。"
+	                  }
+	                },
+	                {
+	                  "type": "div",
+	                  "classList": [
+	                    "row_text"
+	                  ],
+	                  "children": [
+	                    {
+	                      "type": "text",
+	                      "classList": [
+	                        "focuse"
+	                      ],
+	                      "attr": {
+	                        "value": "关注"
+	                      }
+	                    },
+	                    {
+	                      "type": "text",
+	                      "classList": [
+	                        "line"
+	                      ],
+	                      "attr": {
+	                        "value": "|"
+	                      }
+	                    },
+	                    {
+	                      "type": "text",
+	                      "classList": [
+	                        "unfocuse"
+	                      ],
+	                      "attr": {
+	                        "value": "不感兴趣"
+	                      }
+	                    }
+	                  ]
 	                }
 	              ]
 	            }
@@ -126,8 +386,104 @@
 /***/ function(module, exports) {
 
 	module.exports = {
-	  "page-container": {
-	    "paddingTop": 100
+	  "bg_color": {
+	    "backgroundColor": "#f0f0f0",
+	    "height": 1378,
+	    "paddingTop": 100,
+	    "color": "#ff0000"
+	  },
+	  "img": {
+	    "width": 714,
+	    "height": 300
+	  },
+	  "title": {
+	    "position": "absolute",
+	    "top": 20,
+	    "left": 20,
+	    "color": "#ff0000",
+	    "fontSize": 48,
+	    "fontWeight": "bold",
+	    "backgroundColor": "#ffffff"
+	  },
+	  "slider": {
+	    "flexDirection": "row",
+	    "margin": 18,
+	    "width": 714,
+	    "height": 300
+	  },
+	  "slider-pages": {
+	    "flexDirection": "row",
+	    "width": 714,
+	    "height": 300
+	  },
+	  "first_item": {
+	    "backgroundColor": "#ffffff",
+	    "paddingBottom": 20
+	  },
+	  "first_title": {
+	    "color": "#000000",
+	    "fontSize": 40,
+	    "padding": 20
+	  },
+	  "row_text": {
+	    "display": "flex",
+	    "flexDirection": "row",
+	    "paddingLeft": 20
+	  },
+	  "row_data": {
+	    "color": "#7e7e7e",
+	    "fontSize": 30
+	  },
+	  "row_type": {
+	    "color": "#38B059",
+	    "fontSize": 28,
+	    "borderColor": "#38B059",
+	    "borderWidth": 1,
+	    "marginLeft": 12,
+	    "padding": 2,
+	    "borderRadius": 5
+	  },
+	  "user_img": {
+	    "height": 38,
+	    "width": 38,
+	    "resize": "contain"
+	  },
+	  "user_name": {
+	    "marginBottom": 10
+	  },
+	  "content": {
+	    "fontSize": 35
+	  },
+	  "content_style": {
+	    "color": "#6A6A6A",
+	    "paddingLeft": 20,
+	    "paddingBottom": 10
+	  },
+	  "focuse": {
+	    "color": "#7e7e7e"
+	  },
+	  "unfocuse": {
+	    "color": "#7e7e7e"
+	  },
+	  "line": {
+	    "paddingLeft": 30,
+	    "paddingRight": 30,
+	    "color": "#7e7e7e"
+	  },
+	  "second_model": {
+	    "backgroundColor": "#ffffff",
+	    "marginTop": 20,
+	    "paddingBottom": 20
+	  },
+	  "ad_img": {
+	    "width": 750,
+	    "height": 300,
+	    "resize": "contain"
+	  },
+	  "new_list": {
+	    "borderBottomColor": "#f0f0f0",
+	    "borderBottomWidth": 2,
+	    "paddingBottom": 10
 	  }
 	}
 
@@ -135,34 +491,15 @@
 /* 3 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = function(module, exports, __weex_require__){"use strict";
+	module.exports = function(module, exports, __weex_require__){'use strict';
 
+	var env = 'user';
 	__webpack_require__(4);
-	var stream = __weex_require__('@weex-module/stream');
-	module.exports = {
-		data: function () {return {
-			items: []
-		}},
-		created: function created() {
-			var _url = "http://192.168.25.19:8020/suifang/php/diabetes.php";
-			this.rend(_url);
-		},
-		methods: {
-			rend: function rend(_url) {
-				var _self = this;
-				stream.fetch({
-					method: "get",
-					url: _url,
-					type: "json"
-				}, function (res) {
-					try {
-						var results = res.data;
 
-						_self.items.push(results);
-					} catch (e) {}
-				}, function (res) {});
-			}
-		}
+	module.exports = {
+	  data: function () {return {
+	    itemList: [{ itemId: '520421163634', title: '', pictureUrl: 'http://i.niupic.com/images/2017/01/10/Js3990.png' }, { itemId: '522076777462', title: '', pictureUrl: 'http://i.niupic.com/images/2017/01/10/XT8AWL.png' }, { itemId: '522076777462', title: '', pictureUrl: 'http://i.niupic.com/images/2017/01/10/OTAtth.png' }]
+	  }}
 	};}
 	/* generated by weex-loader */
 

@@ -48,7 +48,7 @@
 	var __weex_style__ = __webpack_require__(2)
 	var __weex_script__ = __webpack_require__(3)
 
-	__weex_define__('@weex-component/58d81893c0fdc911bd3a828b7e978773', [], function(__weex_require__, __weex_exports__, __weex_module__) {
+	__weex_define__('@weex-component/36ed75ac6a2c504c97ae4bfe6d36f7d0', [], function(__weex_require__, __weex_exports__, __weex_module__) {
 
 	    __weex_script__(__weex_module__, __weex_exports__, __weex_require__)
 	    if (__weex_exports__.__esModule && __weex_exports__.default) {
@@ -61,56 +61,274 @@
 
 	})
 
-	__weex_bootstrap__('@weex-component/58d81893c0fdc911bd3a828b7e978773',undefined,undefined)
+	__weex_bootstrap__('@weex-component/36ed75ac6a2c504c97ae4bfe6d36f7d0',undefined,undefined)
 
 /***/ },
 /* 1 */
 /***/ function(module, exports) {
 
 	module.exports = {
-	  "type": "div",
+	  "type": "scroller",
 	  "classList": [
-	    "page-container"
+	    "bg_color"
 	  ],
 	  "children": [
 	    {
 	      "type": "nav",
 	      "attr": {
-	        "navtitle": "首页",
-	        "color": "#fff"
+	        "title": "活动"
 	      }
 	    },
 	    {
 	      "type": "div",
 	      "classList": [
-	        "list-wrapper"
+	        "ad_img"
 	      ],
 	      "children": [
 	        {
-	          "type": "text",
+	          "type": "image",
 	          "attr": {
-	            "value": "hello 要实现网络请求的测试"
-	          }
-	        },
-	        {
-	          "type": "list",
+	            "src": "http://i.niupic.com/images/2017/01/04/L2AV1w.png"
+	          },
 	          "classList": [
-	            "list"
+	            "ad_img"
+	          ]
+	        }
+	      ]
+	    },
+	    {
+	      "type": "div",
+	      "children": [
+	        {
+	          "type": "div",
+	          "classList": [
+	            "list_model"
 	          ],
 	          "children": [
 	            {
-	              "type": "cell",
-	              "append": "tree",
-	              "repeat": {
-	                "expression": function () {return this.items},
-	                "value": "item"
-	              },
+	              "type": "div",
+	              "classList": [
+	                "list_model_row"
+	              ],
 	              "children": [
 	                {
-	                  "type": "text",
+	                  "type": "image",
 	                  "attr": {
-	                    "value": function () {return this.item.responseData}
+	                    "src": "http://i.niupic.com/images/2017/01/04/3aXK4m.png"
+	                  },
+	                  "classList": [
+	                    "list_img"
+	                  ]
+	                },
+	                {
+	                  "type": "text",
+	                  "classList": [
+	                    "list_text"
+	                  ],
+	                  "attr": {
+	                    "value": "真相问答机"
 	                  }
+	                },
+	                {
+	                  "type": "image",
+	                  "attr": {
+	                    "src": "http://i.niupic.com/images/2017/01/03/QxqgKj.png"
+	                  },
+	                  "classList": [
+	                    "model_dian"
+	                  ]
+	                }
+	              ]
+	            },
+	            {
+	              "type": "div",
+	              "classList": [
+	                "list_model_row"
+	              ],
+	              "children": [
+	                {
+	                  "type": "image",
+	                  "attr": {
+	                    "src": "http://i.niupic.com/images/2017/01/04/M53Wfx.png"
+	                  },
+	                  "classList": [
+	                    "list_img"
+	                  ]
+	                },
+	                {
+	                  "type": "text",
+	                  "classList": [
+	                    "list_text"
+	                  ],
+	                  "attr": {
+	                    "value": "投票不能停"
+	                  }
+	                },
+	                {
+	                  "type": "image",
+	                  "attr": {
+	                    "src": "http://i.niupic.com/images/2017/01/03/QxqgKj.png"
+	                  },
+	                  "classList": [
+	                    "model_dian"
+	                  ]
+	                }
+	              ]
+	            }
+	          ]
+	        },
+	        {
+	          "type": "div",
+	          "classList": [
+	            "list_model"
+	          ],
+	          "children": [
+	            {
+	              "type": "div",
+	              "classList": [
+	                "list_model_row"
+	              ],
+	              "children": [
+	                {
+	                  "type": "image",
+	                  "attr": {
+	                    "src": "http://i.niupic.com/images/2017/01/04/BQ9tbh.png"
+	                  },
+	                  "classList": [
+	                    "list_img"
+	                  ]
+	                },
+	                {
+	                  "type": "text",
+	                  "classList": [
+	                    "list_text"
+	                  ],
+	                  "attr": {
+	                    "value": "我的任务"
+	                  }
+	                },
+	                {
+	                  "type": "image",
+	                  "attr": {
+	                    "src": "http://i.niupic.com/images/2017/01/04/CjGkUJ.png"
+	                  },
+	                  "classList": [
+	                    "model_get"
+	                  ]
+	                },
+	                {
+	                  "type": "image",
+	                  "attr": {
+	                    "src": "http://i.niupic.com/images/2017/01/03/QxqgKj.png"
+	                  },
+	                  "classList": [
+	                    "model_dian"
+	                  ]
+	                }
+	              ]
+	            },
+	            {
+	              "type": "div",
+	              "classList": [
+	                "list_model_row"
+	              ],
+	              "children": [
+	                {
+	                  "type": "image",
+	                  "attr": {
+	                    "src": "http://i.niupic.com/images/2017/01/04/MuMl1L.png"
+	                  },
+	                  "classList": [
+	                    "list_img"
+	                  ]
+	                },
+	                {
+	                  "type": "text",
+	                  "classList": [
+	                    "list_text"
+	                  ],
+	                  "attr": {
+	                    "value": "财富商城"
+	                  }
+	                },
+	                {
+	                  "type": "image",
+	                  "attr": {
+	                    "src": "http://i.niupic.com/images/2017/01/03/QxqgKj.png"
+	                  },
+	                  "classList": [
+	                    "model_dian"
+	                  ]
+	                }
+	              ]
+	            },
+	            {
+	              "type": "div",
+	              "classList": [
+	                "list_model_row"
+	              ],
+	              "children": [
+	                {
+	                  "type": "image",
+	                  "attr": {
+	                    "src": "http://i.niupic.com/images/2017/01/04/bEjr2J.png"
+	                  },
+	                  "classList": [
+	                    "list_img"
+	                  ]
+	                },
+	                {
+	                  "type": "text",
+	                  "classList": [
+	                    "list_text"
+	                  ],
+	                  "attr": {
+	                    "value": "排行榜"
+	                  }
+	                },
+	                {
+	                  "type": "image",
+	                  "attr": {
+	                    "src": "http://i.niupic.com/images/2017/01/03/QxqgKj.png"
+	                  },
+	                  "classList": [
+	                    "model_dian"
+	                  ]
+	                }
+	              ]
+	            },
+	            {
+	              "type": "div",
+	              "classList": [
+	                "list_model_row"
+	              ],
+	              "children": [
+	                {
+	                  "type": "image",
+	                  "attr": {
+	                    "src": "http://i.niupic.com/images/2017/01/04/NRT60F.png"
+	                  },
+	                  "classList": [
+	                    "list_img"
+	                  ]
+	                },
+	                {
+	                  "type": "text",
+	                  "classList": [
+	                    "list_text"
+	                  ],
+	                  "attr": {
+	                    "value": "芝麻公告"
+	                  }
+	                },
+	                {
+	                  "type": "image",
+	                  "attr": {
+	                    "src": "http://i.niupic.com/images/2017/01/03/QxqgKj.png"
+	                  },
+	                  "classList": [
+	                    "model_dian"
+	                  ]
 	                }
 	              ]
 	            }
@@ -126,8 +344,46 @@
 /***/ function(module, exports) {
 
 	module.exports = {
-	  "page-container": {
-	    "paddingTop": 100
+	  "bg_color": {
+	    "backgroundColor": "#f0f0f0",
+	    "paddingTop": 100,
+	    "color": "#ff0000"
+	  },
+	  "ad_img": {
+	    "height": 280,
+	    "width": 750
+	  },
+	  "list_model_row": {
+	    "display": "flex",
+	    "flexDirection": "row",
+	    "height": 100,
+	    "backgroundColor": "#ffffff",
+	    "padding": 40,
+	    "alignItems": "center",
+	    "marginTop": 1
+	  },
+	  "list_model": {
+	    "marginTop": 20
+	  },
+	  "list_img": {
+	    "height": 55,
+	    "width": 55,
+	    "marginRight": 40,
+	    "resize": "contain"
+	  },
+	  "list_text": {
+	    "flex": 1
+	  },
+	  "model_dian": {
+	    "height": 60,
+	    "width": 60,
+	    "padding": 15,
+	    "resize": "contain"
+	  },
+	  "model_get": {
+	    "height": 60,
+	    "width": 120,
+	    "resize": "contain"
 	  }
 	}
 
@@ -135,35 +391,10 @@
 /* 3 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = function(module, exports, __weex_require__){"use strict";
+	module.exports = function(module, exports, __weex_require__){'use strict';
 
-	__webpack_require__(4);
-	var stream = __weex_require__('@weex-module/stream');
-	module.exports = {
-		data: function () {return {
-			items: []
-		}},
-		created: function created() {
-			var _url = "http://192.168.25.19:8020/suifang/php/diabetes.php";
-			this.rend(_url);
-		},
-		methods: {
-			rend: function rend(_url) {
-				var _self = this;
-				stream.fetch({
-					method: "get",
-					url: _url,
-					type: "json"
-				}, function (res) {
-					try {
-						var results = res.data;
-
-						_self.items.push(results);
-					} catch (e) {}
-				}, function (res) {});
-			}
-		}
-	};}
+	var env = 'user';
+	__webpack_require__(4);}
 	/* generated by weex-loader */
 
 

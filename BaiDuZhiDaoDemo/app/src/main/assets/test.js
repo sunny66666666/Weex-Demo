@@ -96,7 +96,7 @@
 	            icon: '',
 	            image: 'http://i.niupic.com/images/2017/01/03/ZNgDM5.png',
 	            selectedImage: 'http://i.niupic.com/images/2017/01/03/HwFOF4.png',
-	            src: 'http://192.168.25.116:8020/androidProject/WeexDemoApp1/app/src/main/assets/home.js',
+	            src: 'http://192.168.25.19:8020/WeexBaiDu/first.js',
 	            visibility: 'visible',
 	            selectedColor: "#00ff00",
 	            unselectedColor: "#c6c6c6"
@@ -107,7 +107,7 @@
 	            icon: '',
 	            image: 'http://i.niupic.com/images/2017/01/03/jcqGuL.png',
 	            selectedImage: 'http://i.niupic.com/images/2017/01/03/2OXYvY.png',
-	            src: 'http://dotwe.org/raw/dist/6de2384327e09c5bcd14f4f2dce9ae19.js',
+	            src: 'http://192.168.25.19:8020/WeexBaiDu/team.js',
 	            visibility: 'hidden'
 	        }, {
 	            index: 2,

@@ -1,0 +1,147 @@
+<template>
+	<scroller class="bg_color">
+		<nav title='我' leftimg='http://i.niupic.com/images/2017/01/03/TRRdfA.png'  
+			rightimg='http://i.niupic.com/images/2017/01/03/ox15A2.png'
+			leftitemtitle="zuo" ></nav>
+		<div class="user_model_row" >
+			<img src="http://i.niupic.com/images/2017/01/03/42Igv9.png" class="model_img">
+			<div class="model_text">
+				<text>NOT零因子</text>
+		  		<text class="model_edit">查看或编辑个人资料</text>
+			</div>
+			<img src="http://i.niupic.com/images/2017/01/03/QxqgKj.png" class="model_dian">
+		</div>
+		<div class="do_model_row">
+			<div class="model_one">
+				<text>5</text>
+				<text class="model_one_text">赞</text>
+			</div>
+			<div class="model_one">
+				<text>0%</text>
+				<text class="model_one_text">采纳率</text>
+			</div>
+			<div class="model_one">
+				<text >33</text>
+				<text class="model_one_text">财富值</text>
+			</div>
+		</div>
+		<div >
+			<div class="list_model">
+				<div class="list_model_row">
+					<img src="http://i.niupic.com/images/2017/01/03/BCcCa2.png" class="list_img">
+					<text class="list_text">我的提问</text>
+				</div>
+				<div class="list_model_row">
+					<img src="http://i.niupic.com/images/2017/01/04/jwjEIW.png" class="list_img">
+					<text class="list_text">我的回答</text>
+				</div>
+			</div>
+			<div class="list_model">
+				<div class="list_model_row">
+					<img src="http://i.niupic.com/images/2017/01/04/eIkOhU.png" class="list_img">
+					<text class="list_text">我的关注</text>
+				</div>
+				<div class="list_model_row">
+					<img src="http://i.niupic.com/images/2017/01/04/x1jtfS.png" class="list_img">
+					<text class="list_text">我的收藏</text>
+				</div>
+			</div>
+			<div class="list_model">
+				<div class="list_model_row">
+					<img src="http://i.niupic.com/images/2017/01/04/QvwEx1.png" class="list_img">
+					<text class="list_text">我的提草稿</text>
+				</div>
+				<div class="list_model_row">
+					<img src="http://i.niupic.com/images/2017/01/04/sxk22K.png" class="list_img">
+					<text class="list_text">我的浏览记录</text>
+				</div>
+				<div class="list_model_row">
+					<img src="http://i.niupic.com/images/2017/01/04/QNROYR.png" class="list_img">
+					<text class="list_text">我感兴趣的标签</text>
+				</div>
+			</div>
+		</div>
+		
+	</scroller>
+</template>
+
+<script>
+var env='user'
+	require('./model/nav.we');
+</script>
+
+<style>
+	.bg_color {
+		background-color: #f0f0f0;
+		height: 1378;
+		padding-top: 100;
+		color:#ff0000;
+	}
+	
+	.user_model_row{
+		display: flex;
+		flex-direction: row;
+		height: 180;
+		align-items:flex-start;
+		margin-top: 20;
+		background-color: #fff;
+	}
+	.model_img {
+		height: 160;
+		width: 160;
+		padding: 20;
+	}
+	.model_text{
+		flex: 1;
+		margin: 25;
+	}
+	.model_edit{
+		color: #A7A8A8;
+		font-size: 30;
+		margin-top: 20;
+	}
+	.model_dian{
+		height: 60;
+		width: 60;
+		padding: 20;
+		margin-top: 70;
+		margin-right: 20;
+		resize: contain;
+	}
+	.do_model_row{
+		display: flex;
+		flex-direction: row;
+		height: 130;
+		align-items: center;
+		margin-top: 2;
+		background-color: #fff;
+		justify-content: center;
+	}
+	.model_one{
+		flex: 1;
+		flex-direction: column;
+		align-items: center;
+	}
+	.model_one_text{
+		color:#A7A8A8;
+		font-size: 28;
+	}
+	.list_model_row{
+		display: flex;
+		flex-direction: row;
+		height: 100;
+		background-color: #fff;
+		padding: 40;
+		align-items: center;
+		margin-top: 1;
+	}
+	.list_model{
+		margin-top: 20;
+	}
+	.list_img{
+		height: 38;
+		width: 38;
+		margin-right: 40;
+		resize: contain;
+	}
+</style>

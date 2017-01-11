@@ -1,0 +1,178 @@
+<template>
+	<scroller class="bg_color">
+		<nav title='主页' leftimg='http://i.niupic.com/images/2017/01/11/OlGnRf.png'  
+			rightimg='http://i.niupic.com/images/2017/01/11/xpYp9x.png'
+			leftitemtitle="zuo" ></nav>
+			<div class="middle_content">
+				<div class="slide_model">
+				 <slider class="slider" interval="3000" auto-play="true">
+			      <div class="slider-pages" repeat="item in itemList">
+			        <image class="img" src="{{item.pictureUrl}}"></image>
+			        <text class="title">{{item.title}}</text>
+			      </div>
+			     </slider>
+				</div>
+				<div class="first_item">
+					<text class="first_title">古代的人是们，是怎样对待春运的？</text>
+					<div class="row_text"/>
+						<text class="row_data">2017.01.10更新11篇</text>
+						<text class="row_type">日报</text>
+					</div>
+				</div>
+				<div class="second_model">
+					<div class="new_list">
+						<text class="first_title">百度最成功的产品有那些？</text>
+						<div class="row_text">
+							<img src="http://i.niupic.com/images/2017/01/04/x1jtfS.png" class="user_img">
+							<text class="user_name content_style">它山之石</text>
+						</div>
+						<text class="content content_style">百度搜索；百度一下，你就知道。这个家喻户晓，不用解释了，...hao123；网站导航，上网从这里开始</text>
+						<div class="row_text ">
+							<text class="focuse ">关注 </text>
+							<text class="line ">  |</text>
+							<text class="unfocuse">   不感兴趣</text>
+						</div>
+					</div>
+					
+					<div class="new_list">
+						<text class="first_title">央视批判豆瓣恶评引导观众剧看国产影片，对此你怎么看？</text>
+						<div class="row_text">
+							<img src="http://i.niupic.com/images/2017/01/11/J1fxEr.png" class="user_img">
+							<text class="user_name content_style">杨依依</text>
+						</div>
+						<img src="http://i.niupic.com/images/2017/01/11/iLQklC.jpg" class="ad_img">
+						<text class="content content_style">作为国家喉舌的央媒，竟然为了给几部烂片背书，怒撕影评人以及专业电影评分平台，真乃千古奇闻。权力的爪牙，竟然伸到电影圈，这也伸的太长了吧。</text>
+						<div class="row_text ">
+							<text class="focuse ">关注 </text>
+							<text class="line ">  |</text>
+							<text class="unfocuse">   不感兴趣</text>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+	</scroller>
+</template>
+
+<script>
+var env='user'
+	require('./model/nav.we');
+	
+	  module.exports = {
+    data: {
+      itemList: [
+        {itemId: '520421163634', title: '', pictureUrl: 'http://i.niupic.com/images/2017/01/10/Js3990.png'},
+        {itemId: '522076777462', title: '', pictureUrl: 'http://i.niupic.com/images/2017/01/10/XT8AWL.png'},
+        {itemId: '522076777462', title: '', pictureUrl: 'http://i.niupic.com/images/2017/01/10/OTAtth.png'}
+      ]
+    }
+  }
+</script>
+
+<style>
+	.bg_color {
+		background-color: #f0f0f0;
+		height: 1378;
+		padding-top: 100;
+		color:#ff0000;
+	}
+	
+	 .img {
+    width: 714;
+    height: 300;
+  }
+  .title {
+    position: absolute;
+    top: 20;
+    left: 20;
+    color: #ff0000;
+    font-size: 48;
+    font-weight: bold;
+    background-color: #fff;
+  }
+  .slider {
+    flex-direction: row;
+    margin: 18;
+    width: 714;
+    height: 300;
+  }
+  .slider-pages {
+    flex-direction: row;
+    width: 714;
+    height: 300;
+  }
+  .first_item{
+  	background-color: #fff;
+  	padding-bottom: 20;
+  }
+  .first_title{
+  	color: #000;
+  	font-size: 40;
+  	padding: 20;
+  }
+  .row_text{
+  	display: flex;
+  	flex-direction: row;
+  	padding-left: 20;
+  }
+  .row_data{
+  	color:#7e7e7e;
+  	font-size: 30;
+  }
+  .row_type{
+  	color: #38B059;
+  	font-size: 28;
+  border-color:#38B059 ;
+  border-width: 1;
+ margin-left: 12;
+ padding: 2;
+ border-radius: 5;
+  }
+  .user_img{
+  	height: 38;
+	width: 38;
+	resize: contain;
+  }
+  .user_name{
+  	margin-bottom: 10;
+  }
+  .content{
+  	font-size: 35;
+  }
+  .content_style{
+  	color: #6A6A6A;
+  	padding-left: 20;
+  	padding-bottom: 10;
+  }
+  .focuse {
+  	color:#7e7e7e;
+  }
+  .unfocuse{
+  	color:#7e7e7e;
+  }
+  .line{
+  	padding-left: 30;
+  	padding-right: 30;
+  	color:#7e7e7e;
+  }
+  .second_model{
+  	background-color: #fff;
+  margin-top: 20;
+  padding-bottom: 20;
+  }
+  .ad_img{
+  	width: 750;
+  	height: 300;
+  	resize: contain;
+  	
+  	
+  }
+  .new_list{
+  	border-bottom-color: #f0f0f0;
+		border-bottom-width: 2;
+		padding-bottom: 10;
+  }
+  
+	
+	
+</style>

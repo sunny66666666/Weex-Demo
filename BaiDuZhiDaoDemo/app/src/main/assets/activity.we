@@ -1,0 +1,101 @@
+<template>
+	<scroller class="bg_color">
+		<nav title='活动'></nav>
+		<div class="ad_img">
+			<img src="http://i.niupic.com/images/2017/01/04/L2AV1w.png" class="ad_img">
+		</div>
+		<div>
+			<div class="list_model">
+				<div class="list_model_row">
+					<img src="http://i.niupic.com/images/2017/01/04/3aXK4m.png" class="list_img">
+					<text class="list_text">真相问答机</text>
+					<img src="http://i.niupic.com/images/2017/01/03/QxqgKj.png" class="model_dian">
+				</div>
+				<div class="list_model_row">
+					<img src="http://i.niupic.com/images/2017/01/04/M53Wfx.png" class="list_img">
+					<text class="list_text">投票不能停</text>
+					<img src="http://i.niupic.com/images/2017/01/03/QxqgKj.png" class="model_dian">
+				</div>
+			</div>
+			<div class="list_model">
+				<div class="list_model_row">
+					<img src="http://i.niupic.com/images/2017/01/04/BQ9tbh.png" class="list_img">
+					<text class="list_text">我的任务</text>
+					<img src="http://i.niupic.com/images/2017/01/04/CjGkUJ.png" class="model_get">
+					<img src="http://i.niupic.com/images/2017/01/03/QxqgKj.png" class="model_dian">
+				</div>
+				<div class="list_model_row">
+					<img src="http://i.niupic.com/images/2017/01/04/MuMl1L.png" class="list_img">
+					<text class="list_text">财富商城</text>
+					<img src="http://i.niupic.com/images/2017/01/03/QxqgKj.png" class="model_dian">
+				</div>
+				<div class="list_model_row">
+					<img src="http://i.niupic.com/images/2017/01/04/bEjr2J.png" class="list_img">
+					<text class="list_text">排行榜</text>
+					<img src="http://i.niupic.com/images/2017/01/03/QxqgKj.png" class="model_dian">
+				</div>
+				<div class="list_model_row">
+					<img src="http://i.niupic.com/images/2017/01/04/NRT60F.png" class="list_img">
+					<text class="list_text">芝麻公告</text>
+					<img src="http://i.niupic.com/images/2017/01/03/QxqgKj.png" class="model_dian">
+				</div>
+			</div>
+
+		</div>
+
+	</scroller>
+</template>
+
+<script>
+	var env = 'user'
+	require('./model/nav.we');
+</script>
+
+<style>
+	.bg_color {
+		background-color: #f0f0f0;
+		padding-top: 100;
+		color: #ff0000;
+	}
+	
+	.ad_img {
+		height: 280;
+		width: 750;
+	}
+	
+	.list_model_row {
+		display: flex;
+		flex-direction: row;
+		height: 100;
+		background-color: #fff;
+		padding: 40;
+		align-items: center;
+		margin-top: 1;
+	}
+	
+	.list_model {
+		margin-top: 20;
+	}
+	
+	.list_img {
+		height: 55;
+		width: 55;
+		margin-right: 40;
+		resize: contain;
+	}
+.list_text{
+	flex: 1;
+
+}
+	.model_dian {
+		height: 60;
+		width: 60;
+		padding: 15;
+		resize: contain;
+	}
+	.model_get{
+		height: 60;
+		width: 120;
+		resize: contain;
+	}
+</style>

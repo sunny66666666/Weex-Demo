@@ -1,0 +1,91 @@
+<template>
+    <div style="flex-direction: column;">
+        <wxc-tabbar tab-items = {{tabItems}}></wxc-tabbar>
+    </div>
+</template>
+
+<script>
+    require('weex-components');
+    module.exports = {
+        data: {
+            dir: 'examples',
+            
+            tabItems: [
+                {
+                    index: 0,
+                    title: '首页',
+                    titleColor: '#c6c6c6',
+                    icon: '',
+                    image: 'http://i.niupic.com/images/2017/01/03/ZNgDM5.png',
+                    selectedImage: 'http://i.niupic.com/images/2017/01/03/HwFOF4.png', 
+                    src: 'http://192.168.25.19:8020/WeexTest/hello.js',
+                    visibility: 'visible',
+                    selectedColor: "#00ff00",
+                    unselectedColor:"#c6c6c6",
+                },
+                {
+                    index: 1,
+                    title: '团队',
+                    titleColor: '#c6c6c6',
+                    icon: '',
+                    image: 'http://i.niupic.com/images/2017/01/03/jcqGuL.png',
+                    selectedImage: 'http://i.niupic.com/images/2017/01/03/2OXYvY.png',
+                    src: 'http://dotwe.org/raw/dist/6de2384327e09c5bcd14f4f2dce9ae19.js',
+                    visibility: 'hidden',
+                },
+                {
+                    index: 2,
+                    title: '',
+                    titleColor: '#c6c6c6',
+                    icon: '',
+                    image: 'http://i.niupic.com/images/2017/01/03/4K9j5d.png',
+                    selectedImage: 'http://i.niupic.com/images/2017/01/03/oVDAg4.png',
+                    src: 'http://192.168.25.19:8020/WeexBaiDu/home.js',
+                    visibility: 'hidden',
+                },
+                {
+                    index: 3,
+                    title: '活动',
+                    titleColor: '#c6c6c6',
+                    icon: '',
+                    image: 'http://i.niupic.com/images/2017/01/03/tdV0FD.png',
+                    selectedImage: 'http://i.niupic.com/images/2017/01/03/uFeVmF.png',
+                    
+                    src: 'http://192.168.25.19:8020/WeexBaiDu/activity.js',
+                    visibility: 'hidden',
+                },
+                {
+                    index: 4,
+                    title: '我',
+                    titleColor: '#c6c6c6',
+                    icon: '',
+                    image: 'http://i.niupic.com/images/2017/01/03/OSA0se.png',
+                    selectedImage: 'http://i.niupic.com/images/2017/01/03/YaSVf5.png',
+                    src: 'http://192.168.25.19:8020/WeexBaiDu/user.js',
+                    visibility: 'hidden',
+                }
+            ],
+        },
+        created: function() {
+        },
+        methods: {
+            ready: function (e) {
+                var vm = this;
+                vm.$on('tabBar.onClick',function(e){
+                    var detail= e.detail;
+                    nativeLog('tabBar.onClick ' + detail.index);
+                });
+            },
+        }
+    }
+</script>
+//主页  http://i.niupic.com/images/2017/01/03/ZNgDM5.png  http://i.niupic.com/images/2017/01/03/HwFOF4.png
+// 2:http://i.niupic.com/images/2017/01/03/jcqGuL.png  http://i.niupic.com/images/2017/01/03/2OXYvY.png
+//4:http://i.niupic.com/images/2017/01/03/tdV0FD.png   http://i.niupic.com/images/2017/01/03/uFeVmF.png
+//5:http://i.niupic.com/images/2017/01/03/OSA0se.png   http://i.niupic.com/images/2017/01/03/YaSVf5.png
+
+
+
+
+
+

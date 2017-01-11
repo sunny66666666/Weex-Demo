@@ -1,0 +1,180 @@
+<template>
+	<scroller class="bg_color">
+		<nav title='团队' leftimg='' rightimg='' leftitemtitle="zuo"></nav>
+		<div class="user_model_row">
+			<div><text class="introduce_text">推荐团队</text></div>
+			<div class="type_list">
+				<div class="type_list_row">
+					<img src="http://i.niupic.com/images/2017/01/03/42Igv9.png" class="model_img">
+					<div class="model_text">
+						<text class="model_title">生活用纸交流</text>
+						<div class="flag_model_row">
+							<text class="row_type text_style">社会民生</text>
+							<text class="row_num text_style">1人</text>
+							<text class="row_team text_style">小团</text>
+						</div>
+						<text class="model_note">精益求精，信守承诺</text>
+					</div>
+				</div>
+				<div class="type_list_row">
+					<img src="http://i.niupic.com/images/2017/01/10/lmb1qY.png" class="model_img">
+					<div class="model_text">
+						<text class="model_title">足球之巅</text>
+						<div class="flag_model_row">
+							<text class="row_type text_style pink_text">社会民生</text>
+							<text class="row_num text_style">1人</text>
+							<text class="row_team text_style">小团</text>
+						</div>
+						<text class="model_note">爱足球，爱生活</text>
+					</div>
+				</div>
+				<div class="type_list_row">
+					<img src="http://i.niupic.com/images/2017/01/10/RevoWS.png" class="model_img">
+					<div class="model_text">
+						<text class="model_title">废物发布区</text>
+						<div class="flag_model_row">
+							<text class="row_type text_style yello_text">社会民生</text>
+							<text class="row_num text_style">1人</text>
+							<text class="row_team text_style">小团</text>
+						</div>
+						<text class="model_note">用空余时间帮助更多人</text>
+					</div>
+				</div>
+				<div class="type_list_row">
+					<img src="http://i.niupic.com/images/2017/01/03/42Igv9.png" class="model_img">
+					<div class="model_text">
+						<text class="model_title">小黄人</text>
+						<div class="flag_model_row">
+							<text class="row_type text_style green_text">社会民生</text>
+							<text class="row_num text_style">1人</text>
+							<text class="row_team text_style">小团</text>
+						</div>
+						<text class="model_note">保持精神</text>
+					</div>
+				</div>
+				<div class="type_list_row">
+					<img src="http://i.niupic.com/images/2017/01/10/xZhRcp.png" class="model_img">
+					<div class="model_text">
+						<text class="model_title">软件技术交流</text>
+						<div class="flag_model_row">
+							<text class="row_type text_style">社会民生</text>
+							<text class="row_num text_style">1人</text>
+							<text class="row_team text_style">小团</text>
+						</div>
+						<text class="model_note">软件技术交流</text>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</scroller>
+</template>
+
+<script>
+	var env = 'user'
+	require('./model/nav.we');
+</script>
+
+<style>
+	.bg_color {
+		background-color: #f0f0f0;
+		height: 1378;
+		padding-top: 100;
+		color: #ff0000;
+	}
+	
+	.introduce_text {
+		line-height: 30;
+		color: #8A8A8A;
+		font-size: 30;
+		padding: 30;
+	}
+	
+	.user_model_row {
+		background-color: #fff;
+		margin-top: 22;
+	}
+	
+	.type_list_row {
+		display: flex;
+		flex-direction: row;
+		height: 200;
+		align-items: flex-start;
+		margin-top: 20;
+		background-color: #fff;
+		border-bottom-color: #7e7e7e;
+		border-bottom-width: 1;
+	}
+	
+	.flag_model_row {
+		display: flex;
+		flex-direction: row;
+	}
+	
+	.model_title {
+		font-size: 40;
+		color: #000;
+		padding: 10;
+	}
+	
+	.row_type {
+		width: 150;
+		background-color: #DAB598;
+		margin-left: 10;
+	}
+	
+	.row_num {
+		width: 100;
+		background-color: #84B4DC;
+		margin-left: 20;
+	}
+	
+	.row_team {
+		width: 100;
+		background-color: #84B4DC;
+		margin-left: 20;
+	}
+	
+	.text_style {
+		color: #fff;
+		border-radius: 5;
+		text-align: center;
+		color: #fff;
+		font-size: 28;
+	}
+	
+	.model_img {
+		height: 160;
+		width: 160;
+		padding: 10;
+		border-radius: 150;
+		
+		margin: 20;
+	}
+	
+	.model_text {
+		flex: 1;
+		margin-left: 30;
+		margin-top: 20;
+	}
+	
+	.model_note {
+		flex: 1;
+		margin-left: 10;
+		margin-top: 20;
+		color: #7E7E7E;
+		font-size: 30;
+	}
+	
+	.pink_text {
+		background-color: #FFA5BF;
+	}
+	
+	.yello_text {
+		background-color: #FFAC67;
+	}
+	
+	.green_text {
+		background-color: #87D9C2;
+	}
+</style>
