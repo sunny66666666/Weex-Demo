@@ -69,10 +69,7 @@ ame
 weex优势：
 
 
-![ͼʾ 1](https://i.niupic.com/images/2017/01/11/67alUM.jpg)
-
-![ͼʾ 2](https://i.niupic.com/images/2017/01/11/PxBlnp.jpg)
-
+![ͼʾ 3](https://i.niupic.com/images/2017/01/11/67alUM.jpg)
+![ͼʾ 3](https://i.niupic.com/images/2017/01/11/PxBlnp.jpg)
 ![ͼʾ 3](https://i.niupic.com/images/2017/01/11/jMIbNi.jpg)
-
 ![ͼʾ 4](https://i.niupic.com/images/2017/01/11/rWortS.jpg)
