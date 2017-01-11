@@ -1,0 +1,44 @@
+<template>
+	<scroller class="bg_color">
+		<nav title='详情' leftimg=''  
+			rightimg=''
+			leftitemtitle="" ></nav>
+		<div class="user_model_row" >
+			<img src="http://i.niupic.com/images/2017/01/11/7grN86.png" class="img">
+			
+		</div>
+		
+	</scroller>
+</template>
+
+<script>
+var env='user'
+	require('./model/nav.we');
+
+</script>
+
+<style>
+	.bg_color {
+		background-color: #f0f0f0;
+		height: 905;
+		padding-top: 100;
+		
+	}
+	.user_model_row{
+		width: 750;
+		background-color: #fff;
+		align-items: center;
+		padding-top: 300;
+		margin-top: 5;
+		
+		
+	}
+	.img{
+		height: 500;
+		width: 500;
+		resize: contain;
+		align-content: center;
+	
+	}
+	
+</style>

@@ -27,35 +27,35 @@
 		</div>
 		<div >
 			<div class="list_model">
-				<div class="list_model_row">
+				<div class="list_model_row" onclick="push">
 					<img src="http://i.niupic.com/images/2017/01/03/BCcCa2.png" class="list_img">
 					<text class="list_text">我的提问</text>
 				</div>
-				<div class="list_model_row">
+				<div class="list_model_row" onclick="push">
 					<img src="http://i.niupic.com/images/2017/01/04/jwjEIW.png" class="list_img">
 					<text class="list_text">我的回答</text>
 				</div>
 			</div>
 			<div class="list_model">
-				<div class="list_model_row">
+				<div class="list_model_row" onclick="push">
 					<img src="http://i.niupic.com/images/2017/01/04/eIkOhU.png" class="list_img">
 					<text class="list_text">我的关注</text>
 				</div>
-				<div class="list_model_row">
+				<div class="list_model_row" onclick="push">
 					<img src="http://i.niupic.com/images/2017/01/04/x1jtfS.png" class="list_img">
 					<text class="list_text">我的收藏</text>
 				</div>
 			</div>
 			<div class="list_model">
-				<div class="list_model_row">
+				<div class="list_model_row" onclick="push">
 					<img src="http://i.niupic.com/images/2017/01/04/QvwEx1.png" class="list_img">
 					<text class="list_text">我的提草稿</text>
 				</div>
-				<div class="list_model_row">
+				<div class="list_model_row" onclick="push">
 					<img src="http://i.niupic.com/images/2017/01/04/sxk22K.png" class="list_img">
 					<text class="list_text">我的浏览记录</text>
 				</div>
-				<div class="list_model_row">
+				<div class="list_model_row" onclick="push">
 					<img src="http://i.niupic.com/images/2017/01/04/QNROYR.png" class="list_img">
 					<text class="list_text">我感兴趣的标签</text>
 				</div>
@@ -68,6 +68,40 @@
 <script>
 var env='user'
 	require('./model/nav.we');
+	 require('weex-components');
+  module.exports = {
+    data: {
+     
+    },
+    created: function() {
+//      this.$getConfig(function (config) {
+//          var env = config.env;
+//          if(env.platform == 'iOS'){
+//            var scale = env.scale;
+//            var deviceWidth = env.deviceWidth / scale;
+//            this.navBarHeight = 64.0 * 750.0 / deviceWidth;
+//          }   
+//      }.bind(this));
+    },
+    methods: {
+      push: function() {
+        var vm = this;
+        var params = {
+          'url':  "http://192.168.25.19:8020/WeexBaiDu/item.js",
+          'animated' : 'true',
+        }
+        vm.$call('navigator','push',params, function () {});
+      },
+
+//    pop: function() {
+//      var vm = this;
+//      var params = {
+//        'animated' : 'true',
+//      }
+//      vm.$call('navigator','pop',params, function () {});
+//    },
+    }
+  }
 </script>
 
 <style>

@@ -125,7 +125,6 @@
 	            icon: '',
 	            image: 'http://i.niupic.com/images/2017/01/03/tdV0FD.png',
 	            selectedImage: 'http://i.niupic.com/images/2017/01/03/uFeVmF.png',
-
 	            src: 'http://192.168.25.19:8020/WeexBaiDu/activity.js',
 	            visibility: 'hidden'
 	        }, {
