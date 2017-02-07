@@ -41,17 +41,15 @@ Weex is a extendable cross-platform solution for dynamic programming and publish
 3：应该是有相应的缓存处理的 ，第一次下载图片会比较慢，但是以后每次启动页面，直接显示，不卡壳<br>
 ####(3)modal 模块提供了以下展示消息框的 API：toast、alert、confirm 和 prompt  这些样式都基本符合移动端的显示习惯，使用很方便<br>
 ####(4)子模块的引用。。。<br>
-由于各个页面的title_bar的样式都比较接，所以可以将这个子模块单独处理，什么地方需要直接引用，在相应的页面配置需要的参数即可，很方便
-```<nav>```
+由于各个页面的title_bar的样式都比较接，所以可以将这个子模块单独处理，```<nav>```什么地方需要直接引用，在相应的页面配置需要的参数即可，很方便
 统一构建<br>
 ![](https://i.niupic.com/images/2017/02/07/BxtI0i.png)
 怎么调用<br>
 ![](https://i.niupic.com/images/2017/02/07/vfDLIu.png)
-
-
 ####(5)自由适配各种大小类型的移动端设备，不需要我们自己实现响应式，<br>
+
 4：坑<br>
-------------
+-------
 1:命名文件名的 时候，不要以text.we命名，不然会出现 text不停的循环的情况 就是你weex文件里用的组件名不要跟文件名同名 就好了~<br>
 
 2:通过设置 if 特性值，你可以控制当前组件是否显示。如果值为真，则当前组件会被渲染出来，如果值为假则会被移除<br>
@@ -120,5 +118,6 @@ weex demo  [源码地址：]<br>
 ![ͼʾ 3](https://i.niupic.com/images/2017/01/11/PxBlnp.jpg)
 ![ͼʾ 3](https://i.niupic.com/images/2017/01/11/jMIbNi.jpg)
 ![ͼʾ 4](https://i.niupic.com/images/2017/01/11/rWortS.jpg)
+
 
 
