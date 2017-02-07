@@ -2,7 +2,8 @@
 	<scroller class="bg_color">
 		<nav title='我' leftimg='http://i.niupic.com/images/2017/01/03/TRRdfA.png'  
 			rightimg='http://i.niupic.com/images/2017/01/03/ox15A2.png'
-			leftitemtitle="zuo" ></nav>
+			 >
+		</nav>
 		<div class="user_model_row" >
 			<img src="http://i.niupic.com/images/2017/01/03/42Igv9.png" class="model_img">
 			<div class="model_text">
@@ -13,7 +14,7 @@
 		</div>
 		<div class="do_model_row">
 			<div class="model_one">
-				<text>5</text>
+				<text>5+</text>
 				<text class="model_one_text">赞</text>
 			</div>
 			<div class="model_one">
@@ -87,7 +88,7 @@ var env='user'
       push: function() {
         var vm = this;
         var params = {
-          'url':  "http://192.168.25.19:8020/WeexBaiDu/item.js",
+          'url':  "http://sunnytech.top/item.js",
           'animated' : 'true',
         }
         vm.$call('navigator','push',params, function () {});
