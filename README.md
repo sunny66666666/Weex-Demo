@@ -46,6 +46,8 @@ Weex is a extendable cross-platform solution for dynamic programming and publish
 ![](https://i.niupic.com/images/2017/02/07/BxtI0i.png)
 怎么调用<br>
 ![](https://i.niupic.com/images/2017/02/07/vfDLIu.png)
+![](https://i.niupic.com/images/2017/02/08/fKHnYn.png)
+
 ####(5)自由适配各种大小类型的移动端设备，不需要我们自己实现响应式，<br>
 
 4：坑<br>
